@@ -101,6 +101,8 @@ function crearCartonVisual(nombre, carton){
 
 function marcarNumero(numero){
 
+    function marcarNumero(numero){
+
     jugadores.forEach(jugador => {
 
         if(jugador.carton.includes(numero)){
@@ -112,5 +114,31 @@ function marcarNumero(numero){
             celda.style.background = "cyan";
             celda.style.color = "black";
         }
+
+        if(verificarGanador(jugador)){
+
+            setTimeout(() => {
+
+                alert("🎉 BINGO 🎉\nGanó " + jugador.nombre);
+
+            }, 300);
+
+        }
+
     });
+}
+}
+function verificarGanador(jugador){
+
+    let gano = true;
+
+    jugador.carton.forEach(numero => {
+
+        if(!balotasSacadas.includes(numero)){
+            gano = false;
+        }
+
+    });
+
+    return gano;
 }
