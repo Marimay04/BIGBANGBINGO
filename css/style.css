@@ -1,0 +1,89 @@
+body{
+    background: black;
+    color: cyan;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 60px;
+    text-shadow: 0 0 20px cyan;
+}
+
+#balota{
+    width: 200px;
+    height: 200px;
+    background: cyan;
+    color: black;
+
+    margin: 50px auto;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 70px;
+    font-weight: bold;
+
+    box-shadow: 0 0 40px cyan;
+}
+
+button{
+    padding: 15px 30px;
+    font-size: 20px;
+
+    background: cyan;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+#contenedorJugadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.carton{
+    background: #111;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 20px cyan;
+}
+
+.carton h2{
+    color: cyan;
+}
+
+.tablaCarton{
+    border-collapse: collapse;
+}
+
+.tablaCarton td{
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid cyan;
+
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: white;
+}
